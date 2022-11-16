@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estudos | Bootstrap 5</title>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../../assets/styles/style.css">
+    
+        <style>
+            div {
+                height: 50px;
+
+                width: 100px;
+            }
+
+            .d-flex:nth-child(2) {
+                width: 80%;
+            }
+            .d-flex:nth-child(3) {
+                height: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="heading_1">
+            Flex
+        </h1>
+
+        <div class="d-flex w-100 mb-3 justify-content-around">
+            <div class="bg-primary">1</div>
+            <div class="bg-primary">2</div>
+            <div class="bg-primary">3</div>
+        </div>
+
+        <div class="d-flex mb-3 flex-column justify-content-between">
+            <div class="bg-success">1</div>
+            <div class="bg-success">2</div>
+            <div class="bg-success">3</div>
+        </div>
+
+        <a href="../utilities.html" class="btn btn-primary mb-3">Voltar</a>
+    </body>
+</html>

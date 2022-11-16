@@ -1,0 +1,41 @@
+.container {
+    border: 2px solid blue;
+}
+
+.row {
+    border: 2px solid purple;
+
+    height: 200px;
+
+    margin: 20px;
+
+    padding: 20px;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-6,.col-9, .col-11 {
+    align-items: center;
+
+    display: flex;
+
+    font-size: 20px;
+
+    height: 100%;
+
+    justify-content: center;
+}
+
+.col-1, .col-11 {
+    border: 2px solid orange;
+}
+
+.col-2, .col-4 {
+    border: 2px solid red;
+}
+
+.col-3, .col-9 {
+    border: 2px solid green;
+}
+
+.col-6 {
+    border: 2px solid yellow;
+}

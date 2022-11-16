@@ -1,0 +1,41 @@
+.col-12 {
+    align-items: center;
+
+    border: 2px solid #FFF;
+
+    display: flex;
+
+    font-size: 32px;
+
+    gap: 10px;
+
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    padding: 20px;
+}
+
+.col-12:nth-child(1) {
+    background-color:darkred;
+}
+
+.col-12:nth-child(2) {
+    background-color:green;
+}
+
+.col-12:nth-child(3) {
+    background-color: blue;
+}
+
+.bi.bi-emoji-angry-fill {
+    color:lightcoral;
+}
+
+.bi.bi-emoji-frown-fill {
+    color: greenyellow;
+}
+
+.bi.bi-emoji-smile-fill {
+    color:aqua;
+}

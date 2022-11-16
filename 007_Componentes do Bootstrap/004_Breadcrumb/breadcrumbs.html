@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estudos | Bootstrap 5</title>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script> 
+        <!-- CSS -->
+        <link rel="stylesheet" href="../../assets/styles/style.css">
+        
+        <style>
+            a {
+                font-size: 16px;
+                
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="heading_1">
+            Breadcrumbs
+        </h1>
+
+        <div class="container mb-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">Catálogo</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        Página de Produto
+                    </li>
+                </ol>
+                <h2>Produto</h2>
+                <p>Descrição</p>
+                <div style="display: flex; justify-content: center;"> 
+                    <div 
+                        style="
+                            background-color: #FAFAFA;
+                            border: 1px solid #FAFAFA;
+                            color: #000;
+                            font-size: 20px;
+                            font-weight: bold;
+                            height: 500px;
+                            line-height: 500px;
+                            width: 500px;
+                        "
+                    >
+                        500x500
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <a href="../componentes.html" class="btn btn-primary mb-3">Voltar</a>
+    </body>
+</html>

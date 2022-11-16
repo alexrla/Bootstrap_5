@@ -1,0 +1,29 @@
+.container {
+    border: 2px solid blue;
+}
+
+.row {
+    border: 2px solid purple;
+
+    height: 200px;
+
+    margin: 20px;
+
+    padding: 20px;
+}
+
+.col-2 {
+    align-items: center;
+
+    border: 2px solid green;
+
+    display: flex;
+
+    font-size: 20px;
+
+    height: 40px;
+
+    width: 40px;
+
+    justify-content: center;
+}

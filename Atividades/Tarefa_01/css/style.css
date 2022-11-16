@@ -1,0 +1,29 @@
+.col {
+    align-items: center;
+
+    border: 2px solid #FAFAFA;
+
+    display: flex;
+
+    font-size: 24px;
+
+    height: 50px;
+
+    justify-content: center;
+}
+
+.col:nth-child(even) {
+    background-color: greenyellow;
+
+    color: #000;
+}
+
+.col:nth-child(odd) {
+    background-color: deeppink;
+
+    color: #000;
+}
+
+.col p {
+    margin: 0;
+}

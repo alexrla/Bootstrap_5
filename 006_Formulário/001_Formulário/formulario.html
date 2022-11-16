@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estudos | Bootstrap 5</title>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../../assets/styles/style.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <h1 class="heading_1">
+            Formulários
+        </h1>
+
+        <div class="col-4 mb-5">
+            <form action="#">
+                <div class="mb-4">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Insira seu e-mail" name="email" id="email">
+                    <div id="emailHelp" class="form-text">Não compartilhamos seu endereço de e-mail.</div>
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="form-label">Senha</label>
+                    <input type="password" class="form-control" placeholder="Insira sua senha" name="password" id="password">
+                </div>
+                <input type="submit" value="Entrar" class="btn btn-success">
+            </form>
+        </div>
+
+        <br>
+
+        <div class="col-4 mb-5">
+            <h3>Campo desabilitado</h3>
+            <form action="#">
+                <div class="mb-4">
+                    <label for="email2" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" placeholder="Insira seu e-mail" name="email2" id="email2">
+                </div>
+                <div class="mb-4">
+                    <label for="password2" class="form-label">Senha</label>
+                    <input type="password" class="form-control" placeholder="Insira sua senha" name="password2" id="password2" disabled>
+                </div>
+                <input type="submit" value="Entrar" class="btn btn-success">
+            </form>
+        </div>
+
+        <br>
+
+        <div class="col-4 mb-5">
+            <h3>Form desabilitado</h3>
+            <form action="#">
+                <fieldset disabled>
+                    <div class="mb-4">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" placeholder="Digite seu e-mail" name="name" id="name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="form-label">Mensagem</label>
+                        <textarea class="form-control" placeholder="Digite sua mensagem senha" name="password3" id="password3"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn btn-success">
+                </fieldset>
+            </form>
+        </div>
+        
+        <br>
+
+        <div class="col-4 mb-5">
+            <h3>Form-control</h3>
+            <form action="#">
+                <div class="mb-4 mt-3">
+                    <label for="email4" class="form-label">E-mail</label>
+                    <input type="email" class="form-control-sm" placeholder="Insira seu e-mail" name="email4" id="email4">
+                </div>
+                <div class="mb-4">
+                    <label for="password4" class="form-label">Senha</label>
+                    <input type="password" class="form-control-sm" placeholder="Insira sua senha" name="password4" id="password4">
+                </div>
+                <input type="submit" value="Entrar" class="btn btn-success">
+            </form>
+        </div>
+
+        <br>
+
+        <div class="col-4 mb-5">
+            <h3>Readonly</h3>
+            <form action="#">
+                <div class="mb-4">
+                    <label for="email5" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" placeholder="Insira seu e-mail" name="email5" id="email5" readonly value="alex@email.com">
+                </div>
+                <div class="mb-4">
+                    <label for="password5" class="form-label">Senha</label>
+                    <input type="password" class="form-control-plaintext" placeholder="Insira sua senha" name="password5" id="password5" readonly>
+                </div>
+                <input type="submit" value="Entrar" class="btn btn-success">
+            </form>
+        </div>
+
+        <br>
+
+        <div class="col-4 mb-5">
+            <h3>Arquivo</h3>
+            <form action="#" class="mb-5">
+                <div class="mb-4">
+                    <label for="file" class="form-label">Escolha um arquivo</label>
+                    <input type="file" class="form-control" name="file" id="file">
+                </div>
+                <input type="submit" value="Adicionar arquivo" class="btn btn-success">
+            </form>
+            <h3>Arquivos</h3>
+            <form action="#">
+                <div class="mb-4">
+                    <label for="files" class="form-label">Selecione um/mais arquivos</label>
+                    <input type="file" class="form-control" name="files" id="files" multiple>
+                </div>
+                <input type="submit" value="Adicionar arquivos" class="btn btn-success">
+            </form>
+        </div>
+
+        <br>
+
+        <div class="col-4 mb-5">
+            <h3>Outros tipos de inputs</h3>
+            <form action="#">
+                <div class="mb-4 mt-4">
+                    <label for="cities" class="form-label">Selecione uma cidade</label>
+                    <input class="form-control" list="datalistOptions" id="cities" placeholder="Busque a sua cidade...">
+                    <datalist id="datalistOptions">
+                        <option value="São Paulo">
+                        <option value="Rio de Janeiro">
+                        <option value="Florianópolis">
+                        <option value="Porto Alegre">
+                        <option value="Maceió">
+                        <option value="Recife">
+                        <option value="Salvador">
+                    </datalist>
+                </div>
+                <div class="mb-4">
+                    <label for="color" class="form-label">Selecione uma cor</label>
+                    <br>
+                    <input type="color" name="color" id="color" class="form-control-color" value="#FF0000" title="Escolha uma cor">
+                </div>
+                <div class="mb-4">
+                    <label for="option" class="form-label">Escolha sua opção:</label>
+                    <select class="form-select" name="option" id="option">
+                        <option selected>Selecione uma opção...</option>
+                        <option value="1">Primeira</option>
+                        <option value="2">Segunda</option>
+                        <option value="3">Terceira</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="options" class="form-label">Escolha uma/mais opções:</label>
+                    <select class="form-select" name="options" id="options" multiple>
+                        <option value="1">Maçã</option>
+                        <option value="2">Banana</option>
+                        <option value="3">Laranja</option>
+                        <option value="4">Abacaxi</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <p>Escolha seus números da sorte:</p>
+                    <div class="form-check" style="display: flex; justify-content: center; gap: 10px;">
+                        <input type="checkbox" class="form-check-input" name="one" id="one">
+                        <label for="one" class="form-check-label">1</label>
+                    </div>
+                    <div class="form-check" style="display: flex; justify-content: center; gap: 10px;">
+                        <input type="checkbox" class="form-check-input" name="two" id="two" checked>
+                        <label for="two" class="form-check-label">2</label>
+                    </div>
+                    <div class="form-check" style="display: flex; justify-content: center; gap: 10px;">
+                        <input type="checkbox" class="form-check-input" name="three" id="three" disabled>
+                        <label for="three" class="form-check-label">3</label>
+                    </div>
+                    <div class="form-check" style="display: flex; justify-content: center; gap: 10px;">
+                        <input type="checkbox" class="form-check-input" name="four" id="four">
+                        <label for="four" class="form-check-label">4</label>
+                    </div>
+                    <div class="form-check" style="display: flex; justify-content: center; gap: 10px;">
+                        <input type="checkbox" class="form-check-input" name="five" id="five">
+                        <label for="five" class="form-check-label">5</label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <p>Escolha uma vogal:</p>
+                    <div class="form-check" style="display: flex; justify-content: center; gap: 10px;">
+                        <input type="radio" class="form-check-input" name="vowel" id="a" value="a" checked>
+                        <label for="a" class="form-check-label" >a</label>
+                    </div>
+                    <div class="form-check" style="display: flex; justify-content: center; gap: 10px;">
+                        <input type="radio" class="form-check-input" name="vowel" id="e" value="e">
+                        <label for="e" class="form-check-label">e</label>
+                    </div>
+                    <div class="form-check" style="display: flex; justify-content: center;">
+                        <input type="radio" class="form-check-input" name="vowel" id="i" value="i" style="margin-right: 12px" disabled>
+                        <label for="i" class="form-check-label">i</label>
+                    </div>
+                    <div class="form-check" style="display: flex; justify-content: center; gap: 10px;">
+                        <input type="radio" class="form-check-input" name="vowel" id="o" value="o">
+                        <label for="o" class="form-check-label">o</label>
+                    </div>
+                    <div class="form-check" style="display: flex; justify-content: center; gap: 10px;">
+                        <input type="radio" class="form-check-input" name="vowel" id="u" value="u">
+                        <label for="u" class="form-check-label">u</label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <p>Escolha suas configurações:</p>
+                    <div class="form-check form-switch" style="display: flex; justify-content: center; gap: 10px;">
+                        <input type="checkbox" class="form-check-input" name="switch" id="switch">
+                        <label for="switch" class="form-label">Desativar/Ativar?</label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="evaluation" class="form-label">Qual o seu nível de satisfação com o nosso atendimento?</label>
+                    <input type="range" class=" form-range" min="0" max="5" name="evaluation" id="evaluation">
+                </div>
+                <div class="mb-4">
+                    <p>Preencha os dados:</p>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon">@</span>
+                        <input type="text" class="form-control" placeholder="Digite o seu nome do usuário">
+                    </div>
+                    <div class="input-group mt-3">
+                        <span class="input-group-text" id="basic-addon2">@</span>
+                        <input type="email" class="form-control" placeholder="Digite o seu e-mail">
+                    </div>
+                    <p class="mt-4">Digite o valor da sua compra:</p>
+                    <div class="input-group mt-3">
+                        <span class="input-group-text" id="basic-addon3">R$</span>
+                        <input type="text" class="form-control" placeholder="Valor">
+                        <span class="input-group-text" id="basic-addon4">,00</span>
+                    </div>
+                </div>
+                <input type="submit" value="Enviar" class="btn btn-danger">
+            </form>
+        </div>
+        
+        <a href="../form.html" class="btn btn-primary mb-3">Voltar</a>
+    </body>
+</html>

@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+
+    background-color: #333;
+
+    color: #FFF;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    text-align: center;
+}
+
+.heading_1 {
+    padding: 20px 0;
+}
+
+.content {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+a {
+    font-size: 24px;
+
+    text-decoration: none;
+}
+
+#link_1 {
+    color: #D2C106;
+}
+
+#link_2 {
+    color: #4850FE;
+}
+
+#link_3 {
+    color: #FD464E;
+}
+
+#link_4 {
+    color: #6694C2;
+}
+
+#link_5 {
+    color: #8670EF;
+}
+
+#link_6 {
+    color: #FF76C6;
+}
+
+#link_7 {
+    color: #5FD274;
+}
+
+#link_8 {
+    color: #ECD164;
+}
+
+#link_9 {
+    color: #02C4D8;
+}
+
+#link_n {
+    color: #95D22B;
+}
+
+#link_1:hover,
+#link_2:hover,
+#link_3:hover,
+#link_4:hover,
+#link_5:hover,
+#link_6:hover,
+#link_7:hover,
+#link_8:hover,
+#link_9:hover,
+#link_n:hover {
+    text-decoration: underline;
+}
+
+#link_01 {
+    color: #27837A
+}
+
+#link_02 {
+    color: #B0D178;
+}
+
+#link_03 {
+    color: #1EEFEF;
+}
+
+#link_04 {
+    color: #7D9C09;
+}
+
+#link_05 {
+    color: #B706CE;
+}
+
+#link_06 {
+    color: #2AAD70;
+}
+
+#link_07 {
+    color: #83752c;
+}
+
+#link_08 {
+    color: #37BAED;
+}
+
+#link_09 {
+    color: #12E247;
+}
+
+#link_10 {
+    color: #2F6582;
+}
+
+#link_11 {
+    color: #BF7096;
+}
+
+#link_12 {
+    color: #99B483;
+}
+
+#link_13 {
+    color: #DADE10;
+}
+
+#link_14 {
+    color: #DD1F98;
+}
+
+#link_15 {
+    color: #ECB497;
+}
+
+#link_16 {
+    color: #9568EE;
+}
+
+#link_17 {
+    color: #37D0B4;
+}
+
+#link_18 {
+    color: #C81141;
+}
+
+#link_19 {
+    color: #C9C4D0;
+}
+
+#link_20 {
+    color: #6371CB;
+}
+
+#link_01:hover,
+#link_02:hover,
+#link_03:hover,
+#link_04:hover,
+#link_05:hover,
+#link_06:hover,
+#link_07:hover,
+#link_08:hover,
+#link_09:hover,
+#link_10:hover,
+#link_11:hover,
+#link_12:hover,
+#link_13:hover,
+#link_14:hover,
+#link_15:hover,
+#link_16:hover,
+#link_17:hover,
+#link_18:hover,
+#link_19:hover,
+#link_20:hover     {
+    text-decoration: underline;
+}

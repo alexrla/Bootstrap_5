@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estudos | Bootstrap 5</title>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../../assets/styles/style.css">
+    </head>
+    <body>
+        <h1 class="heading_1">Tarefa 04</h1>
+
+        <div class="container" style="border: 1px solid #FAFAFA; padding: 25px">
+            <h3 class="mb-4">Produto</h3>
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <form action="#">
+                        <div class="mb-4">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Informe o nome do produto" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="description" class="form-label">Descrição</label>
+                            <textarea type="text" class="form-control" name="description" id="description" rows="5" placeholder="Informe a descrição do produto" required></textarea>
+                        </div>
+                        <div class="mb-4">
+                            <label for="category" class="form-label">Selecione a categoria:</label>
+                            <select name="category" id="category" class="form-select">
+                                <option value="eletrodomesticos">Eletrodométicos</option>
+                                <option value="moveis">Móveis</option>
+                                <option value="eletronicos">Eletrônicos</option>
+                                <option value="jardim">Jardim</option>
+                            </select>
+                        </div>
+                        <div class="mb-4" style="display: flex; gap: 10px;">
+                            <input type="checkbox" name="stock" id="stock" class="form-check-input">
+                            <label for="stock" class="form-check-label">Está em estoque?</label>
+                        </div>
+                        <div class="mb4">
+                            <input type="submit" value="Cadastrar produto" class="btn btn-success">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <a href="../atividades.html" class="btn btn-primary mb-3">Voltar</a>
+    </body>
+</html>
